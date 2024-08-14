@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+venv/
+env/
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# Model file (if you don't want to include it)
+model.pkl
