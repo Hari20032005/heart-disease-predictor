@@ -4,13 +4,14 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "http://localhost:3000"}})
+CORS(app)
 
 # Load the model
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
+
 def predict():
     data = request.json
     features = np.array(list(data.values())).reshape(1, -1)

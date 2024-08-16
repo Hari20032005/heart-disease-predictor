@@ -66,8 +66,8 @@ const PredictionForm = () => {
 
     if (isFormValid) {
       try {
-        const response = await axios.post('http://localhost:5000/predict', formData);
-        setRisk(response.data.risk);
+        const API_URL="/api"
+        const response = await axios.post(`${API_URL}/predict`, formData);        setRisk(response.data.risk);
       } catch (error) {
         console.error('Error:', error);
       }
