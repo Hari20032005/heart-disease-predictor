@@ -62,5 +62,3 @@ const PredictionForm = () => {
     </div>
   );
 };
-
-export default PredictionForm;
