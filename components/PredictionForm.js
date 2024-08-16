@@ -32,10 +32,10 @@ const PredictionForm = () => {
     if (value === '') return false;  // Disallow empty values
     
     const ranges = {
-      age: [18, 100],
-      trestbps: [90, 200],
-      chol: [100, 600],
-      thalach: [60, 220],
+      age: [0, 100],
+      trestbps: [0, 200],
+      chol: [0, 600],
+      thalach: [0, 220],
       oldpeak: [0, 10]
     };
 
