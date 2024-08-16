@@ -54,6 +54,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
   }
   
   button:hover {
@@ -80,4 +81,82 @@
   
   .low-risk {
     color: #2ed573;
+  }
+  .risk-gauge {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .gauge-fill {
+    height: 100%;
+    background-color: #ff4757;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .risk-gauge span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+  }
+  .comparison-chart {
+    margin-top: 20px;
+  }
+  
+  .comparison-item {
+    margin-bottom: 10px;
+  }
+  
+  .bar-container {
+    height: 20px;
+    background-color: #e0e0e0;
+    position: relative;
+  }
+  
+  .bar {
+    height: 100%;
+    position: absolute;
+  }
+  
+  .bar.average {
+    background-color: #3498db;
+    z-index: 1;
+  }
+  
+  .bar.user {
+    background-color: #e74c3c;
+    z-index: 2;
+  }
+  .health-tip {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-style: italic;
+  }
+  .error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  .report-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .report-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
   }
